@@ -7,7 +7,7 @@ This is the **PC version**, specifically designed for larger screens with precis
 Perfect for showcasing frontend skills in a fun and engaging way!
 
 ## Live Demo
-[https://Md-sohag-BD.github.io/Do-You-Love-Me-Fun-Button-Game-PC-Version](https://Md-sohag-BD.github.io/Do-You-Love-Me-Fun-Button-Game-PC-Version)
+[https://Md-sohag-BD.github.io/Do-You-Love-Me-Fun-Button-Game-PC-Version](https://Md-sohag-BD.github.io/Do-You-Love-Me-Fun-Button-Game-PC-Version/)
 
 ---
 
