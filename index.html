@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px; /* বোতামের আকার ছোট করার জন্য */
+            font-size: 16px; /* ফন্ট সাইজ ছোট করার জন্য */
+            margin: 5px; /* বোতামের মধ্যে কিছু মার্জিন */
+            border: none; /* বর্ডার সরিয়ে দেওয়া */
+            border-radius: 5px; /* কোণ গোলাকার করার জন্য */
+            cursor: pointer; /* মাউস পয়েন্টার পরিবর্তন করার জন্য */
+        }
+        #yesButton {
+            background-color: green; /* সবুজ রঙ */
+            color: white; /* লেখার রঙ সাদা */
+        }
+        #noButton {
+            background-color: red; /* লাল রঙ */
+            color: white; /* লেখার রঙ সাদা */
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 30px; /* বড় ফন্ট সাইজ */
+            color: green; /* সবুজ রঙ */
+            text-align: center; /* কেন্দ্রীভূত লেখা */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="question">Do you love me?</h1>
+    <div>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    <p id="response"></p>
+
+    <script>
+        // "Yes" বোতামে ক্লিক করলে "Do you love me?" লেখাটি "I love you too 🥰" এ পরিবর্তিত হবে
+        document.getElementById('yesButton').onclick = function() {
+            document.getElementById('question').innerText = "I love you too 🥰";
+            document.getElementById('question').style.color = "green"; // লেখার রঙ সবুজ করা
+            document.getElementById('response').innerText = ""; // পূর্ববর্তী উত্তর মুছে ফেলা
+        };
+
+        // "No" বোতামে মাউস নিয়ে গেলে এলোমেলোভাবে স্থান পরিবর্তন করবে
+        document.getElementById('noButton').onmouseover = function() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            this.style.position = 'absolute';
+            this.style.left = x + 'px';
+            this.style.top = y + 'px';
+        };
+    </script>
+</body>
+</html>
